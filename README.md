@@ -1,40 +1,21 @@
 Diabetes Dataset Sampling and Bootstrap Analysis
 
-Introduction
-
-This analysis uses the `diabetes.csv` dataset (768 patients) to:
-
-1. Compare Glucose statistics in a random sample vs population.
-2. Compare the 98th percentile BMI in the sample vs population.
-3. Use bootstrap sampling to estimate BloodPressure statistics and compare them to the population.
-
+Findings 
 
 (a): Glucose Comparison
-
-A random sample of 25 observations was drawn. Mean and maximum Glucose were slightly lower in the sample than in the population:
-Interpretation: 
-The sample underestimates both mean and maximum Glucose, reflecting normal variability in small samples.
+The random sample of 25 patients slightly underestimates both the mean and maximum Glucose compared to the entire population. This difference is expected as a result of sampling variability, especially with small samples. Small samples may miss extreme values like the maximum, leading to underestimates compared to population values.
 
 
 (b): 98th Percentile BMI Comparison
-
-The 98th percentile BMI was lower in the sample than in the population:
-Interpretation: 
-The sample underestimates the extreme BMI value since small samples are less likely to capture population extremes.
+The sample’s 98th percentile BMI is lower than the population’s 98th percentile BMI. This happens because small random samples are less likely to include extreme high BMI values that define the upper percentiles. As a result, the sample underestimates the population’s extreme BMI threshold.
 
 
 (c): Bootstrap Sampling for BloodPressure
-
-500 bootstrap samples (n=150) were used to estimate BloodPressure statistics:
-Interpretation:
-Bootstrap averages for mean, standard deviation, and 98th percentile closely match the population statistics, showing bootstrap sampling provides reliable estimates.
+The bootstrap averages (from 500 samples of 150 observations each) closely match the population statistics. The mean and standard deviation estimates are nearly identical to the true values, and even the 98th percentile is very close. This demonstrates the strength of bootstrap sampling in the sense that with enough samples and a reasonable size, it can reliably estimate population parameters, even for extreme percentiles. 
 
 
 Conclusion
-
-Small samples may underestimate population statistics, especially extremes.  
-Bootstrap sampling provides accurate estimates of population parameters.  
-Visual comparisons confirm findings.
+In all, small samples may underestimate population statistics, especially extremes.  However, bootstrap sampling provides accurate estimates of population parameters. The visual comparisons that were shown confirm these findings.
 
 
 
