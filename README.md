@@ -15,6 +15,7 @@ The bootstrap averages (from 500 samples of 150 observations each) closely match
 
 
 Conclusion
+
 In all, small samples may underestimate population statistics, especially extremes.  However, bootstrap sampling provides accurate estimates of population parameters. The visual comparisons that were shown confirm these findings.
 
 
